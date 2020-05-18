@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>路由的导航守卫 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="title: 路由导航守卫date: 2020-02-01 19:35:10tags:路由导航守卫 1. \路由******导航守卫****1.1 \全局******的导航守卫****1.2 \组价******级别的路由守卫****1.3 \路由******级的导航守卫****\2.导航******守卫的解析流程****2. \子路由**3. \引入**前端工程化 最早其实前后台不分家   前后台">
+<meta property="og:type" content="article">
+<meta property="og:title" content="路由的导航守卫">
+<meta property="og:url" content="http://yoursite.com/2020/05/18/%E8%B7%AF%E7%94%B1%E7%9A%84%E5%AF%BC%E8%88%AA%E5%AE%88%E5%8D%AB/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: 路由导航守卫date: 2020-02-01 19:35:10tags:路由导航守卫 1. \路由******导航守卫****1.1 \全局******的导航守卫****1.2 \组价******级别的路由守卫****1.3 \路由******级的导航守卫****\2.导航******守卫的解析流程****2. \子路由**3. \引入**前端工程化 最早其实前后台不分家   前后台">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-18T06:50:41.611Z">
+<meta property="article:modified_time" content="2020-05-18T06:52:51.104Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-路由的导航守卫" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-路由的导航守卫" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/18/%E8%B7%AF%E7%94%B1%E7%9A%84%E5%AF%BC%E8%88%AA%E5%AE%88%E5%8D%AB/" class="article-date">
   <time datetime="2020-05-18T06:50:41.611Z" itemprop="datePublished">2020-05-18</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/18/%E8%B7%AF%E7%94%B1%E7%9A%84%E5%AF%BC%E8%88%AA%E5%AE%88%E5%8D%AB/">路由的导航守卫</a>
+    <h1 class="article-title" itemprop="name">
+      路由的导航守卫
     </h1>
   
 
@@ -104,54 +106,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-常用的正则表达式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="article-date">
-  <time datetime="2020-04-29T11:35:10.294Z" itemprop="datePublished">2020-04-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">常用的正则表达式</a>
-    </h1>
+    <a href="/2020/04/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">常用的正则表达式</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>title: 常用的正则表达式<br>date: 2020-04-29 19:35:10<br>tags:常用的正则表达</p>
-<p>验证密码的三个级别表达式</p>
-<p>//强：字母+数字+特殊字符<br>^(?![a-zA-z]+$)(?!\d+$)(?![!@#$%^&amp;<em>]+$)(?![a-zA-z\d]+$)(?![a-zA-z!@#$%^&amp;</em>]+$)(?![\d!@#$%^&amp;<em>]+$)[a-zA-Z\d!@#$%^&amp;</em>]+$  </p>
-<p>//中：字母+数字，字母+特殊字符，数字+特殊字符<br>^(?![a-zA-z]+$)(?!\d+$)(?![!@#$%^&amp;<em>]+$)[a-zA-Z\d!@#$%^&amp;</em>]+$</p>
-<p>//弱：纯数字，纯字母，纯特殊字符<br>^(?:\d+|[a-zA-Z]+|[!@#$%^&amp;*]+)$</p>
-<p>用户名的正则表达式</p>
-<p> /^[a-zA-Z0-9_-]{4,16}$/;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" data-id="ckac4uerx0000vw7k1x86hp6e" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
